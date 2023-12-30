@@ -11,7 +11,15 @@ public class Reverse {
 			 newString = newString+mystring.charAt(i);
 		}
 		System.out.println(newString);
-		int middleIndex = mystring.length() /2;
-		System.out.println("The middle character is " + mystring.charAt(middleIndex));
+		int middleIndex = mystring.length()/2;
+		char middleChar;
+		if (mystring.length() % 2 == 0) {
+            // For even-length strings, get the previous character of the center
+            middleChar = mystring.charAt(middleIndex - 1);
+        } else {
+            // For odd-length strings, get the exact center character
+            middleChar = mystring.charAt(middleIndex);
+        }
+		System.out.println("The middle character is " + middleChar);
 	}
 }
