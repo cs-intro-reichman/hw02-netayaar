@@ -26,7 +26,7 @@ public class OneOfEachStats {
 			boolean boy = false;
 			Integer countEachFamily = 0;
 			for (int i=1; !(girl&&boy); i++){
-			double random = Math.random();
+			double random = generator.nextDouble();
 			if (random<0.5) {
 				boy = true;
 				}
