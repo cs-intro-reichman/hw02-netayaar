@@ -54,10 +54,10 @@ public class OneOfEachStats {
 		else{ commonKids = "4 or more";}
 		
 		System.out.println("Average: "+ roundedAverage + " children to get at least one of each gender.");
-		System.out.println("Number of families with 2 children: "+ countTwo);
-		System.out.println("Number of families with 3 childern: "+ countThree);
-		System.out.println("Number of families with 4 or more children: "+ countFourOrMore);
-		System.out.println("The most common common number of children is "+ commonKids);
+		System.out.println("Number of families with 2 children: " + countTwo);
+		System.out.println("Number of families with 3 childern: " + countThree);
+		System.out.println("Number of families with 4 or more children: " + countFourOrMore);
+		System.out.println("The most common common number of children is " + commonKids + ".");
 		}}
 		
 		//// In the previous version of this program, you used a statement like:
