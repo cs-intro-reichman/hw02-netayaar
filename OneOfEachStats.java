@@ -11,10 +11,6 @@ public class OneOfEachStats {
 		
 	public static void main (String[] args) {
 		int families = Integer.parseInt(args[0]);
-		int seed = Integer.parseInt(args[1]);
-		// Initailizes a random numbers generator with the given seed value
-        Random generator = new Random(seed);
-		double rnd = generator.nextDouble();
 		double average = 0;
 		String commonKids = "";
 		int countTogether = 0;
@@ -22,6 +18,10 @@ public class OneOfEachStats {
 		int countThree = 0;
 		int countFourOrMore = 0;
 		for(int j=1; j<=families; j++){
+			int seed = Integer.parseInt(args[1]);
+		// Initailizes a random numbers generator with the given seed value
+        	Random generator = new Random(seed);
+			double rnd = generator.nextDouble();
 			boolean girl = false;
 			boolean boy = false;
 			Integer countEachFamily = 0;
