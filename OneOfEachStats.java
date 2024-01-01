@@ -17,10 +17,10 @@ public class OneOfEachStats {
 		double rnd = generator.nextDouble();
 		double average = 0;
 		String commonKids = "";
-		Integer countTogether = 0;
-		Integer countTwo = 0;
-		Integer countThree = 0;
-		Integer countFourOrMore = 0;
+		int countTogether = 0;
+		int countTwo = 0;
+		int countThree = 0;
+		int countFourOrMore = 0;
 		for(int j=1; j<=families; j++){
 			boolean girl = false;
 			boolean boy = false;
