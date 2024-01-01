@@ -43,6 +43,7 @@ public class OneOfEachStats {
 		countTogether+=countEachFamily;
 		}
 		average = (double)countTogether/families;
+		double roundedAverage = Math.round(average * 1000.0) / 1000.0;
 		Integer mostKidsCheck = Math.max(countTwo,Math.max(countThree,countFourOrMore));
 		
 		if (mostKidsCheck.equals(countTwo)) {
@@ -53,7 +54,7 @@ public class OneOfEachStats {
 		}
 		else{ commonKids = "4 or more";}
 		
-		System.out.println("Average: "+ average + " children to get at least one of each gender.");
+		System.out.println("Average: "+ roundedAverage + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: "+ countTwo);
 		System.out.println("Number of families with 3 childern: "+ countThree);
 		System.out.println("Number of families with 4 or more children: "+ countFourOrMore);
