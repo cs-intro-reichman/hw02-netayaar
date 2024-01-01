@@ -11,28 +11,28 @@ public class OneOfEachStats {
 		
 	public static void main (String[] args) {
 		int families = Integer.parseInt(args[0]);
+		int seed = Integer.parseInt(args[1]);
+		Random generator = new Random(seed);
 		double average = 0;
 		String commonKids = "";
 		int countTogether = 0;
 		int countTwo = 0;
 		int countThree = 0;
 		int countFourOrMore = 0;
-		for(int j=0; j<families; j++){
-			int seed = Integer.parseInt(args[1]);
+		for (int j = 0; j < families; j++) {
 		// Initailizes a random numbers generator with the given seed value
-        	Random generator = new Random(seed);
 			boolean girl = false;
 			boolean boy = false;
-			Integer countEachFamily = 0;
+			int countEachFamily = 0;
 			for (int i=1; !(girl&&boy); i++){
-			double random = generator.nextDouble();
-			if (random<0.5) {
+				double random = generator.nextDouble();
+				if (random<0.5) {
 				boy = true;
 				}
-			else {
+				else {
 				girl= true;
-			}
-			countEachFamily+=1;	
+				}
+				countEachFamily+=1;	
 		}
 		if (countEachFamily==2) {
 			countTwo+=1;
