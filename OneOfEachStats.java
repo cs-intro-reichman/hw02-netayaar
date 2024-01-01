@@ -17,11 +17,10 @@ public class OneOfEachStats {
 		int countTwo = 0;
 		int countThree = 0;
 		int countFourOrMore = 0;
-		for(int j=1; j<=families; j++){
+		for(int j=0; j<families; j++){
 			int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         	Random generator = new Random(seed);
-			double rnd = generator.nextDouble();
 			boolean girl = false;
 			boolean boy = false;
 			Integer countEachFamily = 0;
